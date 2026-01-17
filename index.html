@@ -155,18 +155,22 @@
     @media (max-width:520px){
       .grid{grid-template-columns: 1fr}
     }
-    .avatar img{
+   .avatar img{
   width:100%;
   height:100%;
   object-fit:cover;
-  border-radius:16px; 
-      .username{
-  margin-top:4px;
+  border-radius:16px;
+}
+
+/* Username (TikTok handle) */
+.username{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:6px;
   font-size:14px;
   font-weight:600;
-  color: rgba(255,255,255,.8);
-        .username{
-  display:inline-block;
+  color: var(--muted);
   text-decoration:none;
 }
 
@@ -174,30 +178,22 @@
   text-decoration: underline;
   opacity: .9;
 }
-.username{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  text-decoration:none;
-}
 
-.tt-icon{
-  font-size:14px;
-  line-height:1;
-}
-.tt-svg{
-  width:12px;
-  height:12px;
+/* TikTok SVG icon size (this is the important part) */
+.username .tt-svg,
+.username svg{
+  width:12px !important;
+  height:12px !important;
+  min-width:12px;
+  min-height:12px;
   display:inline-block;
   vertical-align:middle;
-  fill: rgba(255,255,255,.8);
-  flex-shrink:0;
+  fill: currentColor;
+  flex:0 0 auto;
 }
 
-.username:hover .tt-svg{
-  fill: rgba(255,255,255,.92);
-}
-  .follow-tt{
+/* Follow button */
+.follow-tt{
   display:inline-block;
   margin-top:8px;
   padding:6px 12px;
@@ -212,15 +208,7 @@
 .follow-tt:hover{
   opacity:.9;
 }
-.username svg{
-  width:12px !important;
-  height:12px !important;
-  min-width:12px;
-  min-height:12px;
-  display:inline-block;
-  vertical-align:middle;
-  fill: currentColor;
-}
+
 
   </style>
 </head>
