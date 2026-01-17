@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop Categories</title>
+  <style>
+    /* Reuse your site's vibe quickly */
+    :root{
+      --bg:#f5efe6; --text:#3b332c; --muted:#7a6f66; --border:rgba(0,0,0,.06);
+      --shadow:0 14px 40px rgba(0,0,0,.12); --radius:18px; --max:760px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:var(--font); background:var(--bg); color:var(--text); padding:28px 18px 60px;}
+    .wrap{max-width:var(--max); margin:0 auto;}
+    .card{background:rgba(255,255,255,.12); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px;}
+    h1{margin:0; font-size:22px}
+    p{margin:8px 0 0; color:var(--muted)}
+    .grid{margin-top:14px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
+    .tile{display:block; text-decoration:none; color:inherit; padding:14px; border-radius:16px;
+      border:1px solid var(--border); background:rgba(255,255,255,.75); box-shadow:0 6px 16px rgba(0,0,0,.06);
+    }
+    .tile .t{font-weight:800}
+    .tile .d{margin-top:6px; color:var(--muted); font-size:12px; line-height:1.3}
+    .back{display:inline-block; margin-top:14px; color:inherit; text-decoration:none; opacity:.8}
+    .back:hover{text-decoration:underline; opacity:1}
+    @media (max-width:520px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Shop Categories</h1>
+      <p>Tap a category to see curated picks (affiliate links).</p>
+
+      <div class="grid">
+        <a class="tile" href="lamps.html"><div class="t">Lamps</div><div class="d">Table + floor lamps that look expensive.</div></a>
+        <a class="tile" href="coffee-tables.html"><div class="t">Coffee Tables</div><div class="d">Modern, small-space friendly picks.</div></a>
+        <a class="tile" href="kitchen-gadgets.html"><div class="t">Kitchen Gadgets</div><div class="d">Viral + actually useful.</div></a>
+        <a class="tile" href="organization.html"><div class="t">Organization</div><div class="d">Closet, pantry, bathroom, storage wins.</div></a>
+      </div>
+
+      <a class="back" href="index.html">← Back to home</a>
+    </div>
+  </div>
+</body>
+</html>
