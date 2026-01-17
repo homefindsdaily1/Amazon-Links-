@@ -185,6 +185,32 @@
   font-size:14px;
   line-height:1;
 }
+      .tt-svg{
+  width:14px;
+  height:14px;
+  display:block;
+  fill: rgba(255,255,255,.8);
+  flex: 0 0 auto;
+}
+.username:hover .tt-svg{
+  fill: rgba(255,255,255,.92);
+}
+  .follow-tt{
+  display:inline-block;
+  margin-top:8px;
+  padding:6px 12px;
+  font-size:12px;
+  font-weight:700;
+  color:#fff;
+  background: linear-gradient(135deg, #25F4EE, #FE2C55);
+  border-radius:999px;
+  text-decoration:none;
+}
+
+.follow-tt:hover{
+  opacity:.9;
+}
+
   </style>
 </head>
 
@@ -196,8 +222,13 @@
       <div class="title">
         <h1>Shop My Finds</h1>
 <a class="username" href="https://www.tiktok.com/@homefindsdaily1" target="_blank" rel="noopener">
-  <span class="tt-icon">🎵</span>
+  <svg class="tt-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.53v12.4a2.89 2.89 0 1 1-2.89-2.89c.3 0 .6.05.88.13V8.07a6.42 6.42 0 0 0-.88-.06A6.42 6.42 0 1 0 15.82 14V8.62a8.38 8.38 0 0 0 3.77.9V6.69z"/>
+  </svg>
   <span>@homefindsdaily1</span>
+</a>
+        <a class="follow-tt" href="https://www.tiktok.com/@homefindsdaily1" target="_blank" rel="noopener">
+  Follow on TikTok
 </a>
         <div class="tag">Curated home & lifestyle picks ✨</div>
         <div class="pillbar">
