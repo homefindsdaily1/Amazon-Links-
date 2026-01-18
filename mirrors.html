@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mirrors | HomeFindsDaily1</title>
+  <meta name="description" content="Curated mirror picks to brighten spaces, add depth, and elevate your home aesthetic." />
+
+  <style>
+    :root{
+      --bg:#f5efe6;
+      --text:#3b332c;
+      --muted:#7a6f66;
+      --border:rgba(0,0,0,.06);
+      --shadow:0 14px 40px rgba(0,0,0,.12);
+      --radius:18px;
+      --max:760px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:var(--bg);
+      color:var(--text);
+      padding:28px 18px 60px;
+    }
+    .wrap{max-width:var(--max); margin:0 auto;}
+    .card{
+      background: rgba(255,255,255,.12);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+    h1{margin:0; font-size:22px}
+    p{margin:8px 0 0; color:var(--muted); line-height:1.4}
+
+    .grid{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+    .product{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.9);
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+      transition: transform .12s ease, border-color .12s ease;
+    }
+    .product:hover{
+      transform: translateY(-1px);
+      border-color: rgba(0,0,0,.12);
+    }
+
+    .product-img{
+      width:100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius:12px;
+      margin-bottom:10px;
+      background: rgba(0,0,0,.03);
+    }
+    .product-img.contain{
+      object-fit: contain;
+      background:#fff;
+    }
+
+    .name{font-weight:800}
+    .note{margin-top:6px; color:var(--muted); font-size:12px; line-height:1.3}
+
+    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+    .link{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.75);
+      text-decoration:none;
+      color:inherit;
+      font-size:12px;
+      font-weight:700;
+    }
+    .link:hover{text-decoration:underline}
+
+    .disclosure{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px dashed rgba(0,0,0,.12);
+      background: rgba(255,255,255,.6);
+      color: var(--muted);
+      font-size:12px;
+      line-height:1.45;
+    }
+
+    @media (max-width:520px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Mirrors</h1>
+      <p>Light-boosting, space-enhancing mirrors that instantly elevate any room.</p>
+
+      <div class="grid">
+        <!-- Arched Full-Length Mirror -->
+        <a class="product" href="https://amzn.to/4bGDnvT" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71uT4JlS2GL._AC_SY300_SX300_QL70_FMwebp_.jpg" alt="Arched full-length mirror" />
+          <div class="name">Arched Full-Length Mirror</div>
+          <div class="note">Makes rooms feel taller, brighter, and instantly more styled.</div>
+        </a>
+
+        <!-- Rounded Wall Mirror -->
+        <a class="product" href="https://amzn.to/3YLPrVg" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/61sUOvUzKwL._AC_SY300_SX300_QL70_FMwebp_.jpg" alt="Rounded wall mirror" />
+          <div class="name">Rounded Wall Mirror</div>
+          <div class="note">Soft curves that balance modern and cozy spaces.</div>
+        </a>
+
+        <!-- Minimalist Rectangle Mirror -->
+        <a class="product" href="https://amzn.to/3NxsnHd" target="_blank" rel="noopener">
+          <img class="product-img contain" src="https://m.media-amazon.com/images/I/61F6+n9VarL._AC_SY450_.jpg" alt="Minimalist rectangle mirror" />
+          <div class="name">Minimalist Rectangle Mirror</div>
+          <div class="note">Clean-lined mirror perfect for bathrooms, entryways, or bedrooms.</div>
+        </a>
+
+        <!-- Modern Full-Length Mirror -->
+        <a class="product" href="https://amzn.to/4b1QYOc" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/61Np+w7-GmL._AC_SL1500_.jpg" alt="Modern full-length mirror" />
+          <div class="name">Modern Full-Length Mirror</div>
+          <div class="note">A statement piece that reflects light and opens up your space.</div>
+        </a>
+      </div>
+
+      <div class="row">
+        <a class="link" href="amazon.html">← Back to categories</a>
+        <a class="link" href="index.html">Home</a>
+      </div>
+
+      <div class="disclosure">
+        <strong>Affiliate disclosure:</strong> Some links are affiliate links, which means I may earn a commission if you buy through them (at no extra cost to you).
+      </div>
+    </div>
+  </div>
+</body>
+</html>
