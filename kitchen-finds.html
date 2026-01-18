@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kitchen Finds | HomeFindsDaily1</title>
+  <meta name="description" content="Curated kitchen finds: organization, upgrades, and everyday must-haves." />
+
+  <style>
+    :root{
+      --bg:#f5efe6;
+      --text:#3b332c;
+      --muted:#7a6f66;
+      --border:rgba(0,0,0,.06);
+      --shadow:0 14px 40px rgba(0,0,0,.12);
+      --radius:18px;
+      --max:760px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:var(--bg);
+      color:var(--text);
+      padding:28px 18px 60px;
+    }
+    .wrap{max-width:var(--max); margin:0 auto;}
+    .card{
+      background: rgba(255,255,255,.12);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+    h1{margin:0; font-size:22px}
+    p{margin:8px 0 0; color:var(--muted); line-height:1.4}
+
+    .grid{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+    .product{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.9);
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+      transition: transform .12s ease, border-color .12s ease;
+    }
+    .product:hover{
+      transform: translateY(-1px);
+      border-color: rgba(0,0,0,.12);
+    }
+
+    .product-img{
+      width:100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius:12px;
+      margin-bottom:10px;
+      background: rgba(0,0,0,.03);
+    }
+    /* If any image feels too zoomed, add class="product-img contain" to that one */
+    .product-img.contain{
+      object-fit: contain;
+      background:#fff;
+    }
+
+    .name{font-weight:800}
+    .note{margin-top:6px; color:var(--muted); font-size:12px; line-height:1.3}
+
+    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+    .link{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.75);
+      text-decoration:none;
+      color:inherit;
+      font-size:12px;
+      font-weight:700;
+    }
+    .link:hover{text-decoration:underline}
+
+    .disclosure{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px dashed rgba(0,0,0,.12);
+      background: rgba(255,255,255,.6);
+      color: var(--muted);
+      font-size:12px;
+      line-height:1.45;
+    }
+
+    @media (max-width:520px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Kitchen Finds</h1>
+      <p>Organizers + upgrades that make your kitchen feel easier (and look better).</p>
+
+      <div class="grid">
+        <!-- 1: Large dish drying rack -->
+        <a class="product" href="https://amzn.to/4sNOrgT" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/715wnzHWYlL._SL1500_.jpg" alt="Large dish drying rack" />
+          <div class="name">Large Dish Drying Rack</div>
+          <div class="note">A simple upgrade that keeps counters cleaner and less chaotic.</div>
+        </a>
+
+        <!-- 2: Sink caddy sponge holder -->
+        <a class="product" href="https://amzn.to/4jMTwSv" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71rSPyVkyAL._AC_SL1500_.jpg" alt="Sink caddy sponge holder" />
+          <div class="name">Sink Caddy (Sponge Holder)</div>
+          <div class="note">Dries faster, looks neater, and keeps the sink area organized.</div>
+        </a>
+
+        <!-- 3: Over the stove spice rack -->
+        <a class="product" href="https://amzn.to/3LAo6lU" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71Bbn3XNOtL._AC_SL1500_.jpg" alt="Over the stove spice rack" />
+          <div class="name">Over-the-Stove Spice Rack</div>
+          <div class="note">Uses “dead space” and makes your most-used spices easy to grab.</div>
+        </a>
+
+        <!-- 4: Bakers Rack -->
+        <a class="product" href="https://amzn.to/4qr6Q1o" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/81KR+sKVbcL._AC_SL1500_.jpg" alt="Baker's rack" />
+          <div class="name">Baker’s Rack / Coffee Bar</div>
+          <div class="note">Instant storage + countertop space—perfect for small kitchens.</div>
+        </a>
+
+        <!-- 5: Magnetic fridge shelves -->
+        <a class="product" href="https://amzn.to/4qXuzpT" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/51imrSup74L._AC_.jpg" alt="Magnetic fridge shelves" />
+          <div class="name">Magnetic Fridge Shelves</div>
+          <div class="note">Adds storage instantly for spices, wraps, paper towels, and more.</div>
+        </a>
+
+        <!-- 6: Olive oil sprayer -->
+        <a class="product" href="https://amzn.to/3NqD2Ua" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/71fHCOxxqXL._AC_SL1500_.jpg" alt="Olive oil sprayer" />
+          <div class="name">Olive Oil Sprayer</div>
+          <div class="note">Better coverage than pouring—amazing for air fryer and roasting.</div>
+        </a>
+      </div>
+
+      <div class="row">
+        <a class="link" href="amazon.html">← Back to categories</a>
+        <a class="link" href="index.html">Home</a>
+      </div>
+
+      <div class="disclosure">
+        <strong>Affiliate disclosure:</strong> Some links are affiliate links, which means I may earn a commission if you buy through them (at no extra cost to you).
+      </div>
+    </div>
+  </div>
+</body>
+</html>
