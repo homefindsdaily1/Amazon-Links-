@@ -269,6 +269,26 @@ header{
 @media (max-width:520px){
   .favorites-grid{grid-template-columns: 1fr;}
 }
+.product-img.contain{
+  object-fit: contain;
+  background: #fff;
+}
+/* Make Current Favorites more compact */
+.favorites-grid .product{
+  padding:10px;
+}
+
+.favorites-grid .product-img{
+  margin-bottom:8px;
+}
+
+.favorites-grid .name{
+  font-size:14px;
+}
+
+.favorites-grid .note{
+  font-size:11px;
+}
 
   </style>
 </head>
@@ -358,7 +378,7 @@ header{
 
   <div class="favorites-grid">
  <a class="product" href="https://amzn.to/4a5Zo5d" target="_blank" rel="noopener">
-  <img class="product-img" src="https://m.media-amazon.com/images/I/71+6fYdOeHL._AC_SL1500_.jpg" alt="Modern glass bookshelf" />
+  <img class="product-img contain" src="https://m.media-amazon.com/images/I/71+6fYdOeHL._AC_SL1500_.jpg" />
   <div class="name">Glass & Gold Display Shelf</div>
   <div class="note">An easy way to make books and decor feel intentional instead of cluttered.</div>
 </a>
@@ -370,13 +390,13 @@ header{
 </a>
 
    <a class="product" href="https://amzn.to/3Nr7A8s" target="_blank" rel="noopener">
-  <img class="product-img" src="https://m.media-amazon.com/images/I/61symn74H3L._AC_SL1200_.jpg" alt="Picture frame lights" />
+  <img class="product-img contain" src="https://m.media-amazon.com/images/I/61symn74H3L._AC_SL1200_.jpg" />
   <div class="name">Gallery Frame Lights</div>
   <div class="note">Makes photos and artwork look curated instead of flat.</div>
 </a>
 
    <a class="product" href="https://amzn.to/49CXYPe" target="_blank" rel="noopener">
-  <img class="product-img" src="https://m.media-amazon.com/images/I/71dYKbts7PL._AC_SL1500_.jpg" alt="Wall mounted coat rack" />
+ <img class="product-img contain" src="https://m.media-amazon.com/images/I/71dYKbts7PL._AC_SL1500_.jpg" />
   <div class="name">Wall-Mounted Retractable Hooks</div>
   <div class="note">A smart storage solution that disappears when you’re not using it.</div>
 </a>
