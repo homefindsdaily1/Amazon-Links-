@@ -230,6 +230,45 @@ header{
   transform:none;
   border-color: rgba(255,255,255,.12);
 }
+.favorites-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:10px;
+  padding: 14px 16px 16px;
+}
+
+.product{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  padding:14px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+  transition: transform .12s ease, border-color .12s ease;
+}
+
+.product:hover{
+  transform: translateY(-1px);
+  border-color: rgba(0,0,0,.12);
+}
+
+.product-img{
+  width:100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius:12px;
+  margin-bottom:10px;
+  background: rgba(0,0,0,.03);
+}
+
+.name{font-weight:800}
+.note{margin-top:6px; color:var(--muted); font-size:12px; line-height:1.3}
+
+@media (max-width:520px){
+  .favorites-grid{grid-template-columns: 1fr;}
+}
 
   </style>
 </head>
@@ -308,24 +347,44 @@ header{
         </div>
       </section>
 
-      <!-- MINI LINKS -->
-      <section class="card">
-        <div class="section">
-          <div>
-            <h2>More</h2>
-            <p>Optional extras.</p>
-          </div>
-        </div>
+<!-- CURRENT FAVORITES -->
+<section class="card">
+  <div class="section">
+    <div>
+      <h2>Current Favorites</h2>
+      <p>Things I’m loving right now.</p>
+    </div>
+  </div>
 
-        <div class="btns">
-          <div class="minirow">
-            <a class="mini" href="YOUR-YOUTUBE-LINK-HERE" target="_blank" rel="noopener">YouTube</a>
-            <a class="mini" href="YOUR-PINTEREST-LINK-HERE" target="_blank" rel="noopener">Pinterest</a>
-            <a class="mini" href="YOUR-LTK-LINK-HERE" target="_blank" rel="noopener">LTK</a>
-            <a class="mini" href="YOUR-NEWSLETTER-LINK-HERE" target="_blank" rel="noopener">Email list</a>
-          </div>
-        </div>
-      </section>
+  <div class="favorites-grid">
+ <a class="product" href="https://amzn.to/4a5Zo5d" target="_blank" rel="noopener">
+  <img class="product-img" src="https://m.media-amazon.com/images/I/71+6fYdOeHL._AC_SL1500_.jpg" alt="Modern glass bookshelf" />
+  <div class="name">Glass & Gold Display Shelf</div>
+  <div class="note">An easy way to make books and decor feel intentional instead of cluttered.</div>
+</a>
+
+  <a class="product" href="https://amzn.to/49sLU4d" target="_blank" rel="noopener">
+  <img class="product-img" src="https://m.media-amazon.com/images/I/61+rngWn3NL._AC_SL1500_.jpg" alt="Modern floor lamp" />
+  <div class="name">Modern Floor Lamp</div>
+  <div class="note">Clean lines and soft light that instantly upgrades a living room corner.</div>
+</a>
+
+   <a class="product" href="https://amzn.to/3Nr7A8s" target="_blank" rel="noopener">
+  <img class="product-img" src="https://m.media-amazon.com/images/I/61symn74H3L._AC_SL1200_.jpg" alt="Picture frame lights" />
+  <div class="name">Gallery Frame Lights</div>
+  <div class="note">Makes photos and artwork look curated instead of flat.</div>
+</a>
+
+   <a class="product" href="https://amzn.to/49CXYPe" target="_blank" rel="noopener">
+  <img class="product-img" src="https://m.media-amazon.com/images/I/71dYKbts7PL._AC_SL1500_.jpg" alt="Wall mounted coat rack" />
+  <div class="name">Wall-Mounted Retractable Hooks</div>
+  <div class="note">A smart storage solution that disappears when you’re not using it.</div>
+</a>
+
+  </div>
+</section>
+
+
 
       <footer>
         <div class="disclosure">
