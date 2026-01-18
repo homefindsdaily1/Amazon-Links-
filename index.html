@@ -10,6 +10,11 @@
   <meta property="og:title" content="Shop My Finds" />
   <meta property="og:description" content="My curated Amazon finds + favorite picks." />
   <meta property="og:type" content="website" />
+  
+    <!-- COOL FONT JUST FOR VIBE PILLS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
 :root{
@@ -299,6 +304,37 @@ header{
   font-size:11px;
 }
 
+/* Vibe category pills (Cool Guy / Hot Girl / Budget) */
+.pill.vibe{
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  padding: 8px 14px;
+}
+
+/* Individual vibe accents */
+.pill.hot{
+  color: #b4533c;
+  border-color: rgba(180,83,60,.35);
+}
+
+.pill.cool{
+  color: #4b5563;
+  border-color: rgba(75,85,99,.35);
+}
+
+.pill.budget{
+  color: #7a8f5c;
+  border-color: rgba(122,143,92,.35);
+}
+
+/* Hover = subtle confidence */
+.pill.vibe:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
   </style>
 </head>
 
@@ -321,9 +357,9 @@ header{
         <div class="tag">Curated home & lifestyle picks ✨</div>
         <div class="pillbar">
         <div class="pillbar">
-  <a class="pill" href="cool-guy-finds.html">Cool Guy Finds</a>
-  <a class="pill" href="hot-girl-finds.html">Hot Girl Finds</a>
-  <a class="pill" href="budget-upgrades.html">Budget Upgrades</a>
+  <a class="pill vibe cool" href="cool-guy-finds.html">Cool Guy Finds</a>
+  <a class="pill vibe hot" href="hot-girl-finds.html">Hot Girl Finds</a>
+  <a class="pill vibe budget" href="budget-upgrades.html">Budget Upgrades</a>
 </div>
       </div>
     </header>
