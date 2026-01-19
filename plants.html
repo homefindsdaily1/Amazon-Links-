@@ -4,54 +4,152 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Plants | HomeFindsDaily1</title>
-  <meta name="description" content="Low-maintenance artificial plants that instantly freshen up any space." />
+  <meta name="description" content="Low-maintenance plant picks that add warmth, texture, and life to any space." />
 
   <style>
     :root{
-      --bg:#f5efe6; --text:#3b332c; --muted:#7a6f66;
-      --border:rgba(0,0,0,.06); --shadow:0 14px 40px rgba(0,0,0,.12);
-      --radius:18px; --max:760px;
+      --bg:#f5efe6;
+      --text:#3b332c;
+      --muted:#7a6f66;
+      --border:rgba(0,0,0,.06);
+      --shadow:0 14px 40px rgba(0,0,0,.12);
+      --radius:18px;
+      --max:760px;
       --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);padding:28px 18px 60px}
-    .wrap{max-width:var(--max);margin:0 auto}
-    .card{background:rgba(255,255,255,.12);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
-    h1{margin:0;font-size:22px}
-    p{margin:8px 0 0;color:var(--muted);line-height:1.4}
-    .grid{margin-top:14px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-    .product{display:block;text-decoration:none;color:inherit;padding:14px;border-radius:16px;border:1px solid var(--border);background:rgba(255,255,255,.9);box-shadow:0 6px 16px rgba(0,0,0,.06)}
-    .product-img{width:100%;aspect-ratio:1/1;object-fit:contain;border-radius:12px;margin-bottom:10px;background:#fff}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:var(--bg);
+      color:var(--text);
+      padding:28px 18px 60px;
+    }
+    .wrap{max-width:var(--max); margin:0 auto;}
+    .card{
+      background: rgba(255,255,255,.12);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+    h1{margin:0; font-size:22px}
+    p{margin:8px 0 0; color:var(--muted); line-height:1.4}
+
+    .grid{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+    .product{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.9);
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+      transition: transform .12s ease, border-color .12s ease;
+    }
+    .product:hover{
+      transform: translateY(-1px);
+      border-color: rgba(0,0,0,.12);
+    }
+
+    .product-img{
+      width:100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius:12px;
+      margin-bottom:10px;
+      background: rgba(0,0,0,.03);
+    }
+    .product-img.contain{
+      object-fit: contain;
+      background:#fff;
+    }
+
     .name{font-weight:800}
-    .note{margin-top:6px;color:var(--muted);font-size:12px}
-    .row{display:flex;gap:10px;margin-top:14px}
-    .link{padding:10px 12px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.75);text-decoration:none;color:inherit;font-size:12px;font-weight:700}
-    .disclosure{margin-top:14px;padding:12px;border-radius:16px;border:1px dashed rgba(0,0,0,.12);background:rgba(255,255,255,.6);font-size:12px;color:var(--muted)}
-    @media(max-width:520px){.grid{grid-template-columns:1fr}}
+    .note{margin-top:6px; color:var(--muted); font-size:12px; line-height:1.3}
+
+    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+    .link{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.75);
+      text-decoration:none;
+      color:inherit;
+      font-size:12px;
+      font-weight:700;
+    }
+    .link:hover{text-decoration:underline}
+
+    .disclosure{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px dashed rgba(0,0,0,.12);
+      background: rgba(255,255,255,.6);
+      color: var(--muted);
+      font-size:12px;
+      line-height:1.45;
+    }
+
+    @media (max-width:520px){
+      .grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
+
 <body>
-<div class="wrap"><div class="card">
-<h1>Plants</h1>
-<p>Effortless greenery that adds life without the upkeep.</p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Plants</h1>
+      <p>Easy greenery that brings life to your space — no green thumb required.</p>
 
-<div class="grid">
-<a class="product" href="https://amzn.to/3NStJMM" target="_blank"><img class="product-img" src="https://m.media-amazon.com/images/I/81wXKS3AtXL._AC_SX425_.jpg"><div class="name">Tall Faux Plant</div><div class="note">Instant height and texture for corners or entryways.</div></a>
+      <div class="grid">
+        <!-- Faux Floor Plant -->
+        <a class="product" href="https://amzn.to/3NStJMM" target="_blank" rel="noopener">
+          <img class="product-img contain" src="https://m.media-amazon.com/images/I/81wXKS3AtXL._AC_SX425_.jpg" alt="Tall faux plant" />
+          <div class="name">Tall Faux Floor Plant</div>
+          <div class="note">Perfect for filling empty corners and adding instant height.</div>
+        </a>
 
-<a class="product" href="https://amzn.to/3YIijO7" target="_blank"><img class="product-img" src="https://m.media-amazon.com/images/I/611E+x0ILKL._AC_SY450_.jpg"><div class="name">Tabletop Greenery</div><div class="note">Perfect for shelves, desks, or nightstands.</div></a>
+        <!-- Tabletop Plant -->
+        <a class="product" href="https://amzn.to/3YIijO7" target="_blank" rel="noopener">
+          <img class="product-img contain" src="https://m.media-amazon.com/images/I/611E+x0ILKL._AC_SY450_.jpg" alt="Small faux plant" />
+          <div class="name">Tabletop Faux Plant</div>
+          <div class="note">An easy styling piece for shelves, desks, or nightstands.</div>
+        </a>
 
-<a class="product" href="https://amzn.to/4r19Rpk" target="_blank"><img class="product-img" src="https://m.media-amazon.com/images/I/61c+lkV8QnL._AC_SY450_.jpg"><div class="name">Minimal Potted Plant</div><div class="note">Clean look that blends with neutral decor.</div></a>
+        <!-- Minimal Potted Plant -->
+        <a class="product" href="https://amzn.to/4r19Rpk" target="_blank" rel="noopener">
+          <img class="product-img contain" src="https://m.media-amazon.com/images/I/61c+lkV8QnL._AC_SY450_.jpg" alt="Minimal potted plant" />
+          <div class="name">Minimal Potted Plant</div>
+          <div class="note">Clean, neutral greenery that blends into any decor style.</div>
+        </a>
 
-<a class="product" href="https://amzn.to/3YLKBqY" target="_blank"><img class="product-img" src="https://m.media-amazon.com/images/I/61LSzxnEdwL._AC_SL1500_.jpg"><div class="name">Statement Faux Plant</div><div class="note">Adds a fresh, styled-home feel instantly.</div></a>
-</div>
+        <!-- Statement Faux Plant -->
+        <a class="product" href="https://amzn.to/3YLKBqY" target="_blank" rel="noopener">
+          <img class="product-img" src="https://m.media-amazon.com/images/I/61LSzxnEdwL._AC_SL1500_.jpg" alt="Statement faux plant" />
+          <div class="name">Statement Faux Plant</div>
+          <div class="note">Adds texture and a styled-home feel without maintenance.</div>
+        </a>
+      </div>
 
-<div class="row">
-<a class="link" href="amazon.html">← Back to categories</a>
-<a class="link" href="index.html">Home</a>
-</div>
+      <div class="row">
+        <a class="link" href="amazon.html">← Back to categories</a>
+        <a class="link" href="index.html">Home</a>
+      </div>
 
-<div class="disclosure"><strong>Affiliate disclosure:</strong> Some links may earn a commission at no cost to you.</div>
-</div></div>
+      <div class="disclosure">
+        <strong>Affiliate disclosure:</strong> Some links are affiliate links, which means I may earn a commission if you buy through them (at no extra cost to you).
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-
