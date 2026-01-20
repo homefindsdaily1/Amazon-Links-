@@ -336,7 +336,64 @@ header{
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,.08);
 }
+/* SHOP THE POST */
+.shop-posts{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:12px;
+  padding: 14px 16px 16px;
+}
 
+.shop-post{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+  overflow:hidden;
+  transition: transform .12s ease, border-color .12s ease;
+}
+
+.shop-post:hover{
+  transform: translateY(-1px);
+  border-color: rgba(0,0,0,.12);
+}
+
+.shop-post img{
+  width:100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.shop-post .caption{
+  padding:10px 12px 12px;
+}
+
+.shop-post .title{
+  font-weight:800;
+  font-size:14px;
+}
+
+.shop-post .sub{
+  margin-top:4px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .shop-posts{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width:520px){
+  .shop-posts{
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 
@@ -447,6 +504,46 @@ header{
   <div class="name">Wall-Mounted Retractable Hooks</div>
   <div class="note">A smart storage solution that disappears when you’re not using it.</div>
 </a>
+
+  </div>
+</section>
+<!-- SHOP THE POST -->
+<section class="card">
+  <div class="section">
+    <div>
+      <h2>Shop the Post</h2>
+      <p>Tap a post to shop everything featured.</p>
+    </div>
+  </div>
+
+  <div class="shop-posts">
+
+    <!-- Post 1 -->
+    <a class="shop-post" href="post-living-room.html">
+      <img src="post1-cover.jpg" alt="Neutral living room decor post" />
+      <div class="caption">
+        <div class="title">Neutral Living Room Finds</div>
+        <div class="sub">All products linked →</div>
+      </div>
+    </a>
+
+    <!-- Post 2 -->
+    <a class="shop-post" href="post-bedroom.html">
+      <img src="post2-cover.jpg" alt="Bedroom decor post" />
+      <div class="caption">
+        <div class="title">Cozy Bedroom Upgrades</div>
+        <div class="sub">Shop the full setup →</div>
+      </div>
+    </a>
+
+    <!-- Post 3 -->
+    <a class="shop-post" href="post-kitchen.html">
+      <img src="post3-cover.jpg" alt="Kitchen finds post" />
+      <div class="caption">
+        <div class="title">Kitchen Finds That Look Expensive</div>
+        <div class="sub">View products →</div>
+      </div>
+    </a>
 
   </div>
 </section>
