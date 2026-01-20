@@ -3,89 +3,130 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shop Categories</title>
+  <title>Shop by Room | Shop My Finds</title>
   <style>
-    /* Reuse your site's vibe quickly */
     :root{
       --bg:#f5efe6; --text:#3b332c; --muted:#7a6f66; --border:rgba(0,0,0,.06);
       --shadow:0 14px 40px rgba(0,0,0,.12); --radius:18px; --max:760px;
       --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      --accent1: rgba(194,106,74,.85);  /* terracotta */
+      --accent2: rgba(122,143,92,.75);  /* olive */
     }
     *{box-sizing:border-box}
     body{margin:0; font-family:var(--font); background:var(--bg); color:var(--text); padding:28px 18px 60px;}
     .wrap{max-width:var(--max); margin:0 auto;}
-    .card{background:rgba(255,255,255,.12); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px;}
-    h1{margin:0; font-size:22px}
-    p{margin:8px 0 0; color:var(--muted)}
-    .grid{margin-top:14px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
-    .tile{display:block; text-decoration:none; color:inherit; padding:14px; border-radius:16px;
-      border:1px solid var(--border); background:rgba(255,255,255,.75); box-shadow:0 6px 16px rgba(0,0,0,.06);
+    .card{
+      background:rgba(255,255,255,.7);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
-    .tile .t{font-weight:800}
+    .head{
+      padding:18px 18px 14px;
+      border-bottom:1px solid rgba(0,0,0,.06);
+    }
+    h1{margin:0; font-size:22px; letter-spacing:.2px}
+    p{margin:8px 0 0; color:var(--muted); font-size:13px; line-height:1.35}
+
+    .grid{
+      padding:14px 18px 18px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .tile{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      padding:14px 14px 13px;
+      border-radius:16px;
+      border:1px solid rgba(0,0,0,.06);
+      background:rgba(255,255,255,.88);
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+      position:relative;
+      overflow:hidden;
+      transition:transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+      min-height:92px;
+    }
+    .tile::before{
+      content:"";
+      position:absolute;
+      inset:0 0 auto 0;
+      height:4px;
+      background:linear-gradient(90deg, var(--accent1), var(--accent2));
+      opacity:.7;
+    }
+    .tile:hover{transform:translateY(-1px); border-color:rgba(0,0,0,.12); box-shadow:0 10px 22px rgba(0,0,0,.10);}
+    .tile:active{transform:translateY(0px);}
+    .tile .t{font-weight:850; letter-spacing:.2px; display:flex; align-items:center; gap:8px;}
     .tile .d{margin-top:6px; color:var(--muted); font-size:12px; line-height:1.3}
-    .back{display:inline-block; margin-top:14px; color:inherit; text-decoration:none; opacity:.8}
+
+    .nav{
+      padding:0 18px 18px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .back{
+      display:inline-block;
+      color:inherit;
+      text-decoration:none;
+      opacity:.8;
+      font-size:13px;
+    }
     .back:hover{text-decoration:underline; opacity:1}
-    @media (max-width:520px){ .grid{grid-template-columns:1fr} }
+
+    @media (max-width:520px){ .grid{grid-template-columns:1fr;} }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Shop Categories</h1>
-      <p>Tap a category to see curated picks (affiliate links).</p>
- <div class="grid">
-        <a class="tile" href="lamps.html">
-          <div class="t">Lamps</div>
-          <div class="d">Viral, cozy, and aesthetic lighting upgrades.</div>
+      <div class="head">
+        <h1>Shop by Room</h1>
+        <p>Pick a room, then shop curated finds (affiliate links).</p>
+      </div>
+
+      <div class="grid">
+        <a class="tile" href="room-living.html">
+          <div class="t">🛋️ Living Room</div>
+          <div class="d">Lamps, couches, coffee tables, rugs, wall art.</div>
         </a>
 
-        <a class="tile" href="coffee-tables.html">
-          <div class="t">Coffee Tables</div>
-          <div class="d">Easy living room upgrades for any space.</div>
+        <a class="tile" href="room-bedroom.html">
+          <div class="t">🛏️ Bedroom</div>
+          <div class="d">Lighting, mirrors, storage, cozy upgrades.</div>
         </a>
 
-        <a class="tile" href="kitchen-finds.html">
-          <div class="t">Kitchen Finds</div>
-          <div class="d">Everyday upgrades that make the kitchen feel easier.</div>
+        <a class="tile" href="room-kitchen.html">
+          <div class="t">🍳 Kitchen</div>
+          <div class="d">Kitchen finds, organization, small upgrades.</div>
         </a>
 
-        <a class="tile" href="couches.html">
-          <div class="t">Couches</div>
-          <div class="d">Everyday couches that upgrade your living room.</div>
+        <a class="tile" href="room-bathroom.html">
+          <div class="t">🧼 Bathroom</div>
+          <div class="d">Storage, organization, small refreshes.</div>
         </a>
 
-        <a class="tile" href="mirrors.html">
-          <div class="t">Mirrors</div>
-          <div class="d">Light-boosting and space-enhancing statement mirrors.</div>
+        <a class="tile" href="room-entryway.html">
+          <div class="t">🚪 Entryway</div>
+          <div class="d">Doormats, hooks, storage, mirrors.</div>
         </a>
 
-        <a class="tile" href="plants.html">
-          <div class="t">Plants</div>
-          <div class="d">Low-effort greenery for a lived-in look.</div>
-        </a>
-
-        <a class="tile" href="rugs-doormats.html">
-          <div class="t">Rugs & Doormats</div>
-          <div class="d">Grounding pieces that instantly warm up a space.</div>
-        </a>
-
-        <a class="tile" href="wall-art.html">
-          <div class="t">Wall Art</div>
-          <div class="d">Affordable art that makes walls feel intentional.</div>
-        </a>
-
-        <a class="tile" href="storage-organization.html">
-          <div class="t">Storage & Organization</div>
-          <div class="d">Pretty solutions that keep clutter under control.</div>
-        </a>
-
-        <a class="tile" href="misc.html">
-          <div class="t">Misc</div>
-          <div class="d">The random finds that somehow make everything better.</div>
+        <a class="tile" href="room-outdoor.html">
+          <div class="t">🌿 Outdoor</div>
+          <div class="d">Patio vibes, lighting, plants, extras.</div>
         </a>
       </div>
 
-      <a class="back" href="index.html">← Back to home</a>
+      <div class="nav">
+        <a class="back" href="index.html">← Back to home</a>
+        <!-- If you still want a direct category view later, you can add:
+        <a class="back" href="categories.html">View all categories</a>
+        -->
+      </div>
     </div>
   </div>
 </body>
