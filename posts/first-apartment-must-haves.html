@@ -1,1 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amazon Must Haves</title>
+  <meta name="description" content="First apartment must haves you're going to LOVE " />
 
+  <style>
+    :root{
+      --bg:#f5efe6;
+      --text:#3b332c;
+      --muted:#7a6f66;
+      --border:rgba(0,0,0,.06);
+      --shadow:0 14px 40px rgba(0,0,0,.15);
+      --radius:18px;
+      --max:760px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:var(--bg);
+      color:var(--text);
+      padding:28px 18px 60px;
+    }
+
+    .wrap{max-width:var(--max); margin:0 auto;}
+    .card{
+      background: rgba(255,255,255,.12);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+
+    h1{margin:0;font-size:22px}
+    p{margin:8px 0 0;color:var(--muted)}
+
+    .grid{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .product{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.9);
+      box-shadow:0 6px 16px rgba(0,0,0,.06);
+      transition: transform .12s ease, border-color .12s ease;
+    }
+
+    .product:hover{
+      transform: translateY(-1px);
+      border-color: rgba(0,0,0,.12);
+    }
+
+    .product-img{
+      width:100%;
+      aspect-ratio:1/1;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:10px;
+      background: rgba(0,0,0,.03);
+    }
+
+    .product-img.contain{
+      object-fit:contain;
+      background:#fff;
+    }
+
+    .name{font-weight:800}
+    .note{margin-top:6px;font-size:12px;color:var(--muted);line-height:1.3}
+
+    .row{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    .link{
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.75);
+      text-decoration:none;
+      color:inherit;
+      font-size:12px;
+      font-weight:700;
+    }
+
+    .disclosure{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px dashed rgba(0,0,0,.12);
+      background: rgba(255,255,255,.6);
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.45;
+    }
+
+    @media(max-width:520px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AMAZON</h1>
+      <p>First apartment must-haves you are going to love</p>
+
+  <div class="grid">
+  <a class="product" href="https://amzn.to/4qvYIga" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/91LBcuP8PhL._AC_SL1500_.jpg" />
+    <div class="name">Cloud Couch</div>
+    <div class="note">Soft, oversized, and made for lounging.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/4pNIPk0" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/71E0ARM6muL._AC_SX679_.jpg" />
+    <div class="name">Pull Out Chair</div>
+    <div class="note">Perfect for small spaces and extra guests.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/4jNgKbe" target="_blank" rel="noopener">
+    <img class="product-img contain" src="https://m.media-amazon.com/images/I/81U8LZHBnoL._AC_SY450_.jpg" />
+    <div class="name">Set of 2 End Tables</div>
+    <div class="note">Clean, modern accents for any room.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/4pSWYMN" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/61pfi-0TyPL._AC_SL1000_.jpg" />
+    <div class="name">Cloud Tray</div>
+    <div class="note">A soft sculptural touch for coffee tables.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/4649Icp" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/91hUeELr8mL._AC_SL1500_.jpg" />
+    <div class="name">Textured Bedding</div>
+    <div class="note">Hotel vibes with extra coziness.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/45PcNwY" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/611OMrAPwGL._AC_SL1500_.jpg" />
+    <div class="name">Cutting Board</div>
+    <div class="note">Pretty enough to leave out on display.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/49L6cER" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/71W4QQwL9WL._AC_SL1496_.jpg" />
+    <div class="name">Syrup Dispensers</div>
+    <div class="note">Functional kitchen styling at its best.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/4pSmou6" target="_blank" rel="noopener">
+    <img class="product-img contain" src="https://m.media-amazon.com/images/I/51oJ8sNwqkL._AC_SY300_SX300_QL70_FMwebp_.jpg" />
+    <div class="name">Espresso Shot Glasses</div>
+    <div class="note">Cafe-core essentials for your counter.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/45nY0t0" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/7103JnbncKL._AC_SL1500_.jpg" />
+    <div class="name">Under Cabinet Lighting</div>
+    <div class="note">Instant ambiance with a clean finish.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/3ZmcvKf" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/61VqBo4uZ8L._AC_SL1500_.jpg" />
+    <div class="name">4 Slot Toaster</div>
+    <div class="note">A sleek upgrade for busy mornings.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/49UZhJE" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/81VlpZpg0pL._AC_SL1500_.jpg" />
+    <div class="name">Oval Desk</div>
+    <div class="note">Curved lines that soften a workspace.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/49HurDX" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/71J-aTiJNkL._AC_SL1500_.jpg" />
+    <div class="name">Swivel Chair</div>
+    <div class="note">Comfort meets modern design.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/4a32p7b" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/6122Orc92SL._AC_SL1500_.jpg" />
+    <div class="name">Table</div>
+    <div class="note">A neutral base that works anywhere.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/49wOAOh" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/81MXcVgPPWL._AC_SL1500_.jpg" />
+    <div class="name">Rug</div>
+    <div class="note">Adds warmth, texture, and balance.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/3LAxF4h" target="_blank" rel="noopener">
+    <img class="product-img contain" src="https://m.media-amazon.com/images/I/713C4AvjPdL._AC_SY300_SX300_QL70_FMwebp_.jpg" />
+    <div class="name">Glass Cups with Lid & Straw</div>
+    <div class="note">Everyday drinks, but make them cute.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/3NncJOP" target="_blank" rel="noopener">
+    <img class="product-img contain" src="https://m.media-amazon.com/images/I/71XqXpVYacL._AC_SX425_PIbundle-4,TopRight,0,0_SH20_.jpg" />
+    <div class="name">Shower Shelves</div>
+    <div class="note">Organization that still looks elevated.</div>
+  </a>
+
+  <a class="product" href="https://amzn.to/4bFebpB" target="_blank" rel="noopener">
+    <img class="product-img" src="https://m.media-amazon.com/images/I/61OJxxOkbML._AC_SL1500_.jpg" />
+    <div class="name">Corner Shower Footstool</div>
+    <div class="note">Small upgrade, spa-like feel.</div>
+  </a>
+</div>
+
+      <div class="disclosure">
+        <strong>Affiliate disclosure:</strong>
+        Some links may be affiliate links, meaning I may earn a commission at no extra cost to you.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
